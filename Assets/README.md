@@ -2,25 +2,27 @@
 
 ## Your Task
 
-Install react, redux, and react-redux
+X Install react, redux, and react-redux
 X create a store.js file in the utils directory
-import {createStore} from 'redux'
-import reducers from './reducers'
-add an initialState variable (leave as empty object to start with)
-create a store variable by calling createStore with your reducers and initialState variables
-export default store variable
-go into the reducers.js file and add export default reducers at the bottom
-In the src/App.js file
-import { Provider } from 'react-redux'
-import store from './store'
-Change StoreProvider to just be Provider
+X import {createStore} from 'redux'
+X import reducers from './reducers'
+X add an initialState variable (leave as empty object to start with)
+X create a store variable by calling createStore with your reducers and 
+X initialState variables
+X export default store variable
+X go into the reducers.js file and add export default reducers at the bottom
+X In the src/App.js file
+X import { Provider } from 'react-redux'
+X import store from './store'
+X Change StoreProvider to just be Provider
 add store prop and pass icd.n store variable instead of a value property
-Everywhere we are are doing: const [state, dispatch] = useStoreContext() , replace with:
+X Everywhere we are are doing: const [state, dispatch] = useStoreContext() , replace with:
 import {useDispatch, useSelector} from 'react-redux'
 const dispatch = useDispatch()
 const state = useSelector((state) => state)
-Add the "initial state" value from the utils/GlobalState.js file and add it to the initialState value in the store.js file
-If you can delete the GlobalState.js file without breaking any functionality, you have successfully refactored app to use redux
+
+X Add the "initial state" value from the utils/GlobalState.js file and add it to the initialState value in the store.js file
+X If you can delete the GlobalState.js file without breaking any functionality, you have successfully refactored app to use redux
 (edited)
 
 
